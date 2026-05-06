@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Enable 2FA</h2>
+        <button onclick="getQR()">Get QR</button>
+
+        <br />
+        <img id="qr" />
+        <br />
+
+        <input id="otp" placeholder="Enter OTP" />
+        <button onclick="verify()">Verify</button>
+    </div>
+
+
+
+    <div class="container">
+        <h2>🔐 Verify Login OTP</h2>
+        <p>Authenticator app se code enter karo</p>
+
+        <input type="text" id="otp-ver" placeholder="Enter 6-digit OTP" maxlength="6" />
+
+        <button onclick="verifyLoginOTP()">Verify</button>
+
+        <p id="message"></p>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
